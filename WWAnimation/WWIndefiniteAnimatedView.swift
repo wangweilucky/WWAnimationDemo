@@ -16,38 +16,39 @@ class WWIndefiniteAnimatedView: UIView {
     
     lazy var indefiniteAnimatedLayer: CAShapeLayer = {
         
-        let arcCenter = CGPoint(x: radius + strokeThickness * 0.5 + 5, y: radius + strokeThickness * 0.5 + 5)
+        let arcCenter = CGPoint(x: radius + strokeThickness * 0.5 + 5,
+                                y: radius + strokeThickness * 0.5 + 5)
+        
         let smoothedPath = UIBezierPath(arcCenter: arcCenter,
                                         radius: radius,
-                                        startAngle: CGFloat(Double.pi * 3.0 * 0.5),
-                                        endAngle: (CGFloat(Double.pi * 0.5 + Double.pi * 5)) ,
+                                        startAngle: CGFloat(Double.pi * 1.5),
+                                        endAngle: (CGFloat(Double.pi * 1.5 + Double.pi * 2)) ,
                                         clockwise: true)
         
         var indefiniteAnimatedLayer = CAShapeLayer()
         indefiniteAnimatedLayer.contentsScale = UIScreen.main.scale
         
-        indefiniteAnimatedLayer.frame = CGRect(x: 0, y: 0, width: arcCenter.x * 2, height: arcCenter.y * 2);
-        indefiniteAnimatedLayer.fillColor = UIColor.clear.cgColor;
-        indefiniteAnimatedLayer.strokeColor = strokeColor.cgColor;
-        indefiniteAnimatedLayer.lineWidth = strokeThickness;
-        indefiniteAnimatedLayer.lineCap = kCALineCapRound;
-        indefiniteAnimatedLayer.lineJoin = kCALineJoinBevel;
-        indefiniteAnimatedLayer.path = smoothedPath.cgPath;
+        indefiniteAnimatedLayer.frame = CGRect(x: 0,
+                                               y: 0,
+                                               width: arcCenter.x * 2,
+                                               height: arcCenter.y * 2)
+        indefiniteAnimatedLayer.fillColor = UIColor.clear.cgColor
+        indefiniteAnimatedLayer.strokeColor = strokeColor.cgColor
+        indefiniteAnimatedLayer.lineWidth = strokeThickness
+        indefiniteAnimatedLayer.lineCap = kCALineCapRound
+        indefiniteAnimatedLayer.lineJoin = kCALineJoinBevel
+        indefiniteAnimatedLayer.path = smoothedPath.cgPath
         
-//        let linearCurve = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        let linearCurve = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         
         // mask的不透明内容和layer的叠加部分才能显示
-        
         var maskLayer = CAShapeLayer()
         let maskContent =  UIImage(named: "angle-mask")?.cgImage
         maskLayer.contents = maskContent
         maskLayer.frame = indefiniteAnimatedLayer.bounds
-        
-        maskLayer.mask = indefiniteAnimatedLayer
-//        indefiniteAnimatedLayer.mask = maskLayer
+        indefiniteAnimatedLayer.mask = maskLayer
         
         let animationDuration : TimeInterval = 1
-        
         var animation = CABasicAnimation(keyPath: "transform.rotation")
         animation.fromValue = 0
         animation.toValue = Double.pi * 2
@@ -56,9 +57,9 @@ class WWIndefiniteAnimatedView: UIView {
         animation.repeatCount = .infinity
         animation.fillMode = kCAFillModeForwards
         animation.autoreverses = false
-//        animation.timingFunction = linearCurve
+        animation.timingFunction = linearCurve// 将动画设置为线性的
     
-        indefiniteAnimatedLayer.mask?.add(animation, forKey: "rotate")
+        maskLayer.add(animation, forKey: "rotate")
         
         // 不加这段也是可以的，为啥
 //        let animationGroup = CAAnimationGroup()
@@ -85,7 +86,6 @@ class WWIndefiniteAnimatedView: UIView {
         super.init(frame: frame)
         
         self.layer.addSublayer(indefiniteAnimatedLayer)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

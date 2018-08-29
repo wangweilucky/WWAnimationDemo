@@ -16,15 +16,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let animationView = WWIndefiniteAnimatedView(frame: CGRect(x: 0, y: 0, width: 88, height: 88))
+        
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let animationView = WWIndefiniteAnimatedView(frame: contentView.bounds)
         contentView.addSubview(animationView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
