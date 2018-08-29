@@ -14,6 +14,8 @@
 		000604F3213550CA005D2AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000604F1213550CA005D2AC9 /* LaunchScreen.storyboard */; };
 		000604FE213550CA005D2AC9 /* WWAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000604FD213550CA005D2AC9 /* WWAnimationUITests.swift */; };
 		0006050B21355153005D2AC9 /* WWIndefiniteAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */; };
+		005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005618442136708000DDF16A /* WWProgressAnimatedView.swift */; };
+		00A3BC382136830F001E83DB /* MWBezierCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3BC372136830F001E83DB /* MWBezierCurveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		000604FD213550CA005D2AC9 /* WWAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWAnimationUITests.swift; sourceTree = "<group>"; };
 		000604FF213550CA005D2AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWIndefiniteAnimatedView.swift; sourceTree = "<group>"; };
+		005618442136708000DDF16A /* WWProgressAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWProgressAnimatedView.swift; sourceTree = "<group>"; };
+		00A3BC372136830F001E83DB /* MWBezierCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBezierCurveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				000604F1213550CA005D2AC9 /* LaunchScreen.storyboard */,
 				000604F4213550CA005D2AC9 /* Info.plist */,
 				0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */,
+				005618442136708000DDF16A /* WWProgressAnimatedView.swift */,
+				00A3BC372136830F001E83DB /* MWBezierCurveView.swift */,
 			);
 			path = WWAnimation;
 			sourceTree = "<group>";
@@ -200,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A3BC382136830F001E83DB /* MWBezierCurveView.swift in Sources */,
+				005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */,
 				000604EB213550C8005D2AC9 /* ViewController.swift in Sources */,
 				0006050B21355153005D2AC9 /* WWIndefiniteAnimatedView.swift in Sources */,
 				000604E9213550C8005D2AC9 /* AppDelegate.swift in Sources */,

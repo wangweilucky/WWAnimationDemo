@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +13,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WWAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EB5-oO-oRO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccj-jg-Aqf"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,20 +29,42 @@
                                     <constraint firstAttribute="width" constant="100" id="kdu-eE-Ulk"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Up4-45-FA1">
+                                <rect key="frame" x="137.5" y="393" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9qd-TY-DpP"/>
+                                    <constraint firstAttribute="width" constant="100" id="vDN-85-0uR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qry-9I-MNz" customClass="MWBezierCurveView" customModule="WWAnimation" customModuleProvider="target">
+                                <rect key="frame" x="10" y="30" width="355" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.71438803167183962" blue="0.34267505125882192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="AkJ-cs-Vg7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qry-9I-MNz" secondAttribute="trailing" constant="10" id="V35-Cw-k4M"/>
+                            <constraint firstItem="Up4-45-FA1" firstAttribute="centerX" secondItem="2PD-Y9-HBD" secondAttribute="centerX" id="fME-X9-BQr"/>
+                            <constraint firstItem="Up4-45-FA1" firstAttribute="top" secondItem="2PD-Y9-HBD" secondAttribute="bottom" constant="10" id="jy4-gg-aKs"/>
+                            <constraint firstItem="qry-9I-MNz" firstAttribute="top" secondItem="EB5-oO-oRO" secondAttribute="bottom" constant="10" id="qra-C6-9ci"/>
+                            <constraint firstItem="qry-9I-MNz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="rML-iU-DBQ"/>
                             <constraint firstItem="2PD-Y9-HBD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rwe-K3-20a"/>
                             <constraint firstItem="2PD-Y9-HBD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sPp-rR-oJe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="contentView" destination="2PD-Y9-HBD" id="FAc-vP-qic"/>
+                        <outlet property="curveView" destination="qry-9I-MNz" id="NbG-9A-nWX"/>
+                        <outlet property="progressView" destination="Up4-45-FA1" id="Hiu-iB-zz6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1106.4000000000001" y="6.746626686656672"/>
         </scene>
     </scenes>
 </document>

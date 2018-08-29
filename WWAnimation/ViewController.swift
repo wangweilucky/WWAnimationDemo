@@ -11,17 +11,35 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var progressView: UIView!
+    @IBOutlet weak var curveView: MWBezierCurveView!
+    var progressAniView: WWProgressAnimatedView?
+    var timer :Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let animationView = WWIndefiniteAnimatedView(frame: contentView.bounds)
         contentView.addSubview(animationView)
+        
+        let progressAniView = WWProgressAnimatedView(frame: contentView.bounds)
+        progressView.addSubview(progressAniView)
+        self.progressAniView = progressAniView
+//        progressAniView.strokeEnd = 0.5
+        
+        timer = Timer(timeInterval: 1, repeats: true, block: { _ in
+            progressAniView.strokeEnd = progressAniView.strokeEnd + 0.1
+        })
+        RunLoop.main.add(timer!, forMode: .commonModes)
+        
+        
+        curveView.draylineChartView(x_names: ["1", "2", "3", "4"],
+                                    y_targetValues: [10, 20, 50, 100],
+                                    colors: [UIColor.red])
     }
 
 }

@@ -26,18 +26,17 @@ class WWIndefiniteAnimatedView: UIView {
                                         clockwise: true)
         
         var indefiniteAnimatedLayer = CAShapeLayer()
-        indefiniteAnimatedLayer.contentsScale = UIScreen.main.scale
-        
+        indefiniteAnimatedLayer.contentsScale = UIScreen.main.scale // 为了图片让Retain屏幕上正常显示
+        indefiniteAnimatedLayer.fillColor = UIColor.clear.cgColor   // 填充色
+        indefiniteAnimatedLayer.strokeColor = strokeColor.cgColor   // 描边色
+        indefiniteAnimatedLayer.lineWidth = strokeThickness         // 线条宽度
+        indefiniteAnimatedLayer.lineCap = kCALineCapRound           // 线条首尾的外观
+        indefiniteAnimatedLayer.lineJoin = kCALineJoinBevel         // 线条连接处的外观，圆滑、折线、棱角
+        indefiniteAnimatedLayer.path = smoothedPath.cgPath
         indefiniteAnimatedLayer.frame = CGRect(x: 0,
                                                y: 0,
                                                width: arcCenter.x * 2,
                                                height: arcCenter.y * 2)
-        indefiniteAnimatedLayer.fillColor = UIColor.clear.cgColor
-        indefiniteAnimatedLayer.strokeColor = strokeColor.cgColor
-        indefiniteAnimatedLayer.lineWidth = strokeThickness
-        indefiniteAnimatedLayer.lineCap = kCALineCapRound
-        indefiniteAnimatedLayer.lineJoin = kCALineJoinBevel
-        indefiniteAnimatedLayer.path = smoothedPath.cgPath
         
         let linearCurve = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         
