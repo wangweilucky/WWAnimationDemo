@@ -8,7 +8,7 @@
 
 import UIKit
 
-// 线条类型： 顺滑、折线
+// 线条类型： 曲线、折线
 enum BezierSmoothLine {
     case smooth
     case grid
@@ -25,12 +25,18 @@ enum BezierAnimation {
     case line
 }
 
+// 坐标网格图层
+enum BezierReplicator {
+    case line
+    case noLine
+}
+
 class MWBezierCurveView: UIView {
 
     var colors: [UIColor] = [UIColor.red]
     
-    var smoothType: BezierSmoothLine = .smooth
-    var solidType: BezierSolidLine = .solid
+    var smoothType: BezierSmoothLine = .grid
+    var solidType: BezierSolidLine = .dotted
     
     /// x轴名称、y轴的刻度
     var x_names = Array<String>()
@@ -126,9 +132,19 @@ extension MWBezierCurveView {
         let path = UIBezierPath()
         
         let gradientPath = UIBezierPath()
+        let gradientLayer = CAShapeLayer()
         var fullPath = UIBezierPath()
         
-        // 将所有的线段画出来
+        // 画网格
+//        let rowReplicatorLayer = CAReplicatorLayer()
+//        rowReplicatorLayer.position = CGPoint(x: 0, y: 0)
+//        self.layer.addSublayer(rowReplicatorLayer)
+//
+//        let lowReplicatorLayer = CAReplicatorLayer()
+//        lowReplicatorLayer.position = CGPoint(x: 0, y: 0)
+//        self.layer.addSublayer(lowReplicatorLayer)
+        
+        // 画线
         for item in allPoints {
             
             path.move(to: prePoint)
@@ -143,27 +159,36 @@ extension MWBezierCurveView {
                               controlPoint1: CGPoint(x: (prePoint.x + nowPoint.x) * 0.5, y: prePoint.y),
                               controlPoint2: CGPoint(x: (prePoint.x + nowPoint.x) * 0.5, y: nowPoint.y))
             }
-        
-            
             
             prePoint = item
         }
         
-//        // 完整的图层
-//        if allPoints.count > 1 {
-//            
-//            fullPath = path.copy() as! UIBezierPath
-//            fullPath.addLine(to: CGPoint(x: allPoints.last!.x,  y: (selfHeight + yTopPadding)))
-//            fullPath.addLine(to: CGPoint(x: allPoints.first!.x, y: (selfHeight + yTopPadding)))
-//            fullPath.addLine(to: CGPoint(x: allPoints.first!.x, y: allPoints.first!.y))
-//            
-//            let fullPathLayer = CAShapeLayer()
-//            //            fullPathLayer.frame = self.layer.bounds
-//            self.layer.addSublayer(fullPathLayer)
-//            fullPathLayer.path = fullPath.cgPath
-//            fullPathLayer.fillColor = UIColor.red.cgColor
-//            
-//        }
+        // 完整的图层
+        if allPoints.count > 1 {
+            
+            fullPath = path.copy() as! UIBezierPath
+            fullPath.addLine(to: CGPoint(x: allPoints.last!.x,  y: (selfHeight + yTopPadding)))
+            fullPath.addLine(to: CGPoint(x: allPoints.first!.x, y: (selfHeight + yTopPadding)))
+            fullPath.addLine(to: CGPoint(x: allPoints.first!.x, y: allPoints.first!.y))
+            
+            let fullPathLayer = CAShapeLayer()
+            self.layer.addSublayer(fullPathLayer)
+            fullPathLayer.path = fullPath.cgPath
+            fullPathLayer.lineCap = kCALineCapSquare
+//            fullPathLayer.fillColor = UIColor.blue.cgColor
+            fullPathLayer.strokeColor = UIColor.blue.cgColor
+            
+            let fullPathLayerAnimation = CABasicAnimation(keyPath: "strokeEnd")
+            fullPathLayerAnimation.fromValue = 0.0
+            fullPathLayerAnimation.toValue = 1.0
+            fullPathLayerAnimation.duration = 2.0
+            fullPathLayer.add(fullPathLayerAnimation, forKey: "fullPathLayerAnimation")
+            
+//            let gradientLayer = CALayer()
+//            gradientLayer.frame = self.bounds
+//            gradientLayer.backgroundColor = UIColor.black.cgColor
+//            fullPathLayer.mask = gradientLayer
+        }
         
         // 渐变层
 //        gradientPath.
@@ -180,6 +205,15 @@ extension MWBezierCurveView {
         layer.fillColor = UIColor.clear.cgColor
         layer.borderWidth = 2.0
         self.layer.addSublayer(layer)
+        switch solidType {
+        case .dotted:
+            //设置虚线的线宽及间距
+            layer.lineDashPattern = [NSNumber(value: 10)]
+        case .solid:
+            break
+        }
+        
+        
         
         /// 给曲线加动画
         let pathAnimation = CABasicAnimation(keyPath: "strokeEnd")
@@ -275,7 +309,7 @@ extension MWBezierCurveView {
             let y = (selfHeight - yMarginRatio * item + yMarginRatio * minY) + yTopPadding
 //            let y = (selfHeight - yMarginRatio * item) + yTopPadding
             let point = CGPoint(x: x, y: y)
-            let path = UIBezierPath(roundedRect: CGRect(x: x-r, y: y-r, width: r * 2, height: r * 2), cornerRadius: 6)
+            let path = UIBezierPath(roundedRect: CGRect(x: x-r, y: y-r, width: r*2, height: r * 2), cornerRadius: 6)
             let layer = CAShapeLayer()
             layer.path = path.cgPath
             layer.strokeColor = getdotColor(index: index)
