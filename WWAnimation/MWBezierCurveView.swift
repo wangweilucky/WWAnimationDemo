@@ -8,11 +8,29 @@
 
 import UIKit
 
+// 线条类型： 顺滑、折线
+enum BezierSmoothLine {
+    case smooth
+    case grid
+}
+
+// 线条类型： 实线、虚线
+enum BezierSolidLine {
+    case solid
+    case dotted
+}
+
+// 线条动画： 线性、inout、
+enum BezierAnimation {
+    case line
+}
 
 class MWBezierCurveView: UIView {
 
     var colors: [UIColor] = [UIColor.red]
     
+    var smoothType: BezierSmoothLine = .smooth
+    var solidType: BezierSolidLine = .solid
     
     /// x轴名称、y轴的刻度
     var x_names = Array<String>()
@@ -117,28 +135,35 @@ extension MWBezierCurveView {
             
             let nowPoint = item
             
-            path.addCurve(to: nowPoint,
-                          controlPoint1: CGPoint(x: (prePoint.x + nowPoint.x) * 0.5, y: prePoint.y),
-                          controlPoint2: CGPoint(x: (prePoint.x + nowPoint.x) * 0.5, y: nowPoint.y))
+            switch smoothType {
+            case .grid:
+                path.addLine(to: nowPoint)
+            case .smooth:
+                path.addCurve(to: nowPoint,
+                              controlPoint1: CGPoint(x: (prePoint.x + nowPoint.x) * 0.5, y: prePoint.y),
+                              controlPoint2: CGPoint(x: (prePoint.x + nowPoint.x) * 0.5, y: nowPoint.y))
+            }
+        
+            
             
             prePoint = item
         }
         
-        // 完整的图层
-        if allPoints.count > 1 {
-            
-            fullPath = path.copy() as! UIBezierPath
-            fullPath.addLine(to: CGPoint(x: allPoints.last!.x,  y: (selfHeight + yTopPadding)))
-            fullPath.addLine(to: CGPoint(x: allPoints.first!.x, y: (selfHeight + yTopPadding)))
-            fullPath.addLine(to: CGPoint(x: allPoints.first!.x, y: allPoints.first!.y))
-            
-            let fullPathLayer = CAShapeLayer()
-            //            fullPathLayer.frame = self.layer.bounds
-            self.layer.addSublayer(fullPathLayer)
-            fullPathLayer.path = fullPath.cgPath
-            fullPathLayer.fillColor = UIColor.red.cgColor
-            
-        }
+//        // 完整的图层
+//        if allPoints.count > 1 {
+//            
+//            fullPath = path.copy() as! UIBezierPath
+//            fullPath.addLine(to: CGPoint(x: allPoints.last!.x,  y: (selfHeight + yTopPadding)))
+//            fullPath.addLine(to: CGPoint(x: allPoints.first!.x, y: (selfHeight + yTopPadding)))
+//            fullPath.addLine(to: CGPoint(x: allPoints.first!.x, y: allPoints.first!.y))
+//            
+//            let fullPathLayer = CAShapeLayer()
+//            //            fullPathLayer.frame = self.layer.bounds
+//            self.layer.addSublayer(fullPathLayer)
+//            fullPathLayer.path = fullPath.cgPath
+//            fullPathLayer.fillColor = UIColor.red.cgColor
+//            
+//        }
         
         // 渐变层
 //        gradientPath.

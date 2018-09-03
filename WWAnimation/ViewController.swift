@@ -37,8 +37,8 @@ class ViewController: UIViewController {
         RunLoop.main.add(timer!, forMode: .commonModes)
         
         
-        curveView.draylineChartView(x_names: ["1", "2", "3", "4"],
-                                    y_targetValues: [10, 20, 50, 100],
+        curveView.draylineChartView(x_names: ["1", "2", "3", "4", "5", "6"],
+                                    y_targetValues: [5, 70, 120, 50, 100, 88],
                                     colors: [UIColor.red])
     }
 
