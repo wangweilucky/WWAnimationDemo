@@ -109,7 +109,7 @@ extension MWBezierCurveView {
     
     /// 显示点对应的数值
     func drawdotTitle() {
-        for (index, _) in allPoints.enumerated() {
+        for (_, _) in allPoints.enumerated() {
             
 //            let titleL = UILabel()
 //            titleL.text = "\(y_targetValues[index])"

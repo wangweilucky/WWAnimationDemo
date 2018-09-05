@@ -16,7 +16,12 @@
 		0006050B21355153005D2AC9 /* WWIndefiniteAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */; };
 		005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005618442136708000DDF16A /* WWProgressAnimatedView.swift */; };
 		00A3BC382136830F001E83DB /* MWBezierCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3BC372136830F001E83DB /* MWBezierCurveView.swift */; };
+		4A132F7A213FCCAB001A6D39 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A132F79213FCCAB001A6D39 /* ProgressView.swift */; };
+		4A132F7D213FCDCE001A6D39 /* MWProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A132F7B213FCDCE001A6D39 /* MWProgressBar.xib */; };
+		4A132F7E213FCDCE001A6D39 /* MWProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */; };
 		4A7BAFBE213D3C3200592FF5 /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BAFBD213D3C3200592FF5 /* RadarView.swift */; };
+		4A7BAFC0213E25AF00592FF5 /* EmitterZanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */; };
+		4AC73D2C213FB40300131192 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC73D2B213FB40300131192 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +48,12 @@
 		0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWIndefiniteAnimatedView.swift; sourceTree = "<group>"; };
 		005618442136708000DDF16A /* WWProgressAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWProgressAnimatedView.swift; sourceTree = "<group>"; };
 		00A3BC372136830F001E83DB /* MWBezierCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBezierCurveView.swift; sourceTree = "<group>"; };
+		4A132F79213FCCAB001A6D39 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		4A132F7B213FCDCE001A6D39 /* MWProgressBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MWProgressBar.xib; sourceTree = "<group>"; };
+		4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWProgressBar.swift; sourceTree = "<group>"; };
 		4A7BAFBD213D3C3200592FF5 /* RadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
+		4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterZanView.swift; sourceTree = "<group>"; };
+		4AC73D2B213FB40300131192 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,8 @@
 		000604E7213550C8005D2AC9 /* WWAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */,
+				4A132F7B213FCDCE001A6D39 /* MWProgressBar.xib */,
 				000604E8213550C8005D2AC9 /* AppDelegate.swift */,
 				000604EA213550C8005D2AC9 /* ViewController.swift */,
 				000604EC213550C8005D2AC9 /* Main.storyboard */,
@@ -95,6 +107,9 @@
 				005618442136708000DDF16A /* WWProgressAnimatedView.swift */,
 				00A3BC372136830F001E83DB /* MWBezierCurveView.swift */,
 				4A7BAFBD213D3C3200592FF5 /* RadarView.swift */,
+				4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */,
+				4AC73D2B213FB40300131192 /* LoadingView.swift */,
+				4A132F79213FCCAB001A6D39 /* ProgressView.swift */,
 			);
 			path = WWAnimation;
 			sourceTree = "<group>";
@@ -189,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A132F7D213FCDCE001A6D39 /* MWProgressBar.xib in Resources */,
 				000604F3213550CA005D2AC9 /* LaunchScreen.storyboard in Resources */,
 				000604F0213550CA005D2AC9 /* Assets.xcassets in Resources */,
 				000604EE213550C8005D2AC9 /* Main.storyboard in Resources */,
@@ -210,11 +226,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A3BC382136830F001E83DB /* MWBezierCurveView.swift in Sources */,
+				4A7BAFC0213E25AF00592FF5 /* EmitterZanView.swift in Sources */,
 				4A7BAFBE213D3C3200592FF5 /* RadarView.swift in Sources */,
 				005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */,
 				000604EB213550C8005D2AC9 /* ViewController.swift in Sources */,
+				4AC73D2C213FB40300131192 /* LoadingView.swift in Sources */,
 				0006050B21355153005D2AC9 /* WWIndefiniteAnimatedView.swift in Sources */,
 				000604E9213550C8005D2AC9 /* AppDelegate.swift in Sources */,
+				4A132F7E213FCDCE001A6D39 /* MWProgressBar.swift in Sources */,
+				4A132F7A213FCCAB001A6D39 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
