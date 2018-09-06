@@ -36,8 +36,8 @@ class EmitterZanView: UIView {
         emitterCell.birthRate = 0
         emitterCell.velocity = 40
         emitterCell.velocityRange = 10.0
-        emitterCell.scale = 0.025
-        emitterCell.scaleRange = 0.012
+        emitterCell.scale = 0.5
+        emitterCell.scaleRange = 0.2
         emitterCell.emissionLongitude = CGFloat(-Double.pi * 0.5)
         emitterCell.emissionRange = CGFloat(Double.pi * 0.25)
         emitterCell.contents = UIImage(named: "Shape")!.cgImage

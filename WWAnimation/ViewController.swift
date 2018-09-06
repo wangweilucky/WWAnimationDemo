@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var curveView: MWBezierCurveView!
     var progressAniView: WWProgressAnimatedView?
     var timer :Timer?
-    @IBOutlet weak var progressBar: MWProgressBar!
+  
+    @IBOutlet weak var lineProgressBar: WWLineProgress!
+    @IBOutlet weak var lineGradientprogressBar: WWLineGradientProgress!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,6 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        
         self.zanView.startAnimate()
         
         let animationView = WWIndefiniteAnimatedView(frame: contentView.bounds)
@@ -35,7 +36,6 @@ class ViewController: UIViewController {
         let progressAniView = WWProgressAnimatedView(frame: contentView.bounds)
         progressView.addSubview(progressAniView)
         self.progressAniView = progressAniView
-//        progressAniView.strokeEnd = 0.5
         
         timer = Timer(timeInterval: 1, repeats: true, block: { _ in
             progressAniView.strokeEnd = progressAniView.strokeEnd + 0.1
@@ -46,8 +46,11 @@ class ViewController: UIViewController {
         curveView.draylineChartView(x_names: ["1", "2", "3", "4", "5", "6"],
                                     y_targetValues: [5, 70, 120, 50, 100, 88],
                                     colors: [UIColor.red])
-        
-        progressBar.set(process: 0.5)
+    
+        lineGradientprogressBar.set(colors: [UIColor.orange.cgColor, UIColor.red.cgColor], progress: CGFloat(drand48()))
+        lineGradientprogressBar.draw()
+        lineProgressBar.set(progress: CGFloat(drand48()))
+        lineProgressBar.draw()
     }
 
 }

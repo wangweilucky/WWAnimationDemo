@@ -68,20 +68,31 @@
                                     <constraint firstAttribute="height" constant="100" id="ba9-rl-1HS"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6T-HZ-48r" customClass="MWProgressBar" customModule="WWAnimation" customModuleProvider="target">
-                                <rect key="frame" x="37" y="503" width="100" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWY-Qu-xjN" customClass="WWLineGradientProgress" customModule="WWAnimation" customModuleProvider="target">
+                                <rect key="frame" x="20" y="657" width="100" height="10"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="7u3-EP-UE8"/>
-                                    <constraint firstAttribute="height" constant="100" id="FuS-U3-xam"/>
+                                    <constraint firstAttribute="height" constant="10" id="Lq0-3H-iIp"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zhv-Ie-Ral"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-GZ-ck4" customClass="WWLineProgress" customModule="WWAnimation" customModuleProvider="target">
+                                <rect key="frame" x="20" y="637" width="100" height="10"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="2TB-hv-3t5"/>
+                                    <constraint firstAttribute="width" constant="100" id="Bcz-bQ-FJL"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ccj-jg-Aqf" firstAttribute="top" secondItem="QWY-Qu-xjN" secondAttribute="bottom" id="0ts-CP-Wu0"/>
                             <constraint firstItem="NTd-yt-Mmb" firstAttribute="centerX" secondItem="Up4-45-FA1" secondAttribute="centerX" id="C5l-iG-Wbi"/>
                             <constraint firstItem="NTd-yt-Mmb" firstAttribute="top" secondItem="Up4-45-FA1" secondAttribute="bottom" constant="10" id="SKs-jh-Ime"/>
                             <constraint firstAttribute="trailing" secondItem="qry-9I-MNz" secondAttribute="trailing" constant="10" id="V35-Cw-k4M"/>
+                            <constraint firstItem="QWY-Qu-xjN" firstAttribute="leading" secondItem="buZ-GZ-ck4" secondAttribute="leading" id="WEN-uD-HPX"/>
+                            <constraint firstItem="QWY-Qu-xjN" firstAttribute="trailing" secondItem="buZ-GZ-ck4" secondAttribute="trailing" id="d5M-0E-g7o"/>
                             <constraint firstItem="2bu-2g-bma" firstAttribute="top" secondItem="NTd-yt-Mmb" secondAttribute="top" id="e0J-gQ-YWh"/>
                             <constraint firstItem="Up4-45-FA1" firstAttribute="centerX" secondItem="2PD-Y9-HBD" secondAttribute="centerX" id="fME-X9-BQr"/>
                             <constraint firstItem="5ci-Ta-okb" firstAttribute="top" secondItem="qry-9I-MNz" secondAttribute="bottom" constant="10" id="hnO-Ad-Vg6"/>
@@ -92,15 +103,16 @@
                             <constraint firstItem="qry-9I-MNz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="rML-iU-DBQ"/>
                             <constraint firstItem="2PD-Y9-HBD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rwe-K3-20a"/>
                             <constraint firstItem="2PD-Y9-HBD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sPp-rR-oJe"/>
-                            <constraint firstItem="NTd-yt-Mmb" firstAttribute="leading" secondItem="n6T-HZ-48r" secondAttribute="trailing" id="tgW-pw-l49"/>
+                            <constraint firstItem="QWY-Qu-xjN" firstAttribute="top" secondItem="buZ-GZ-ck4" secondAttribute="bottom" constant="10" id="sjh-Yx-AxM"/>
+                            <constraint firstItem="QWY-Qu-xjN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="sw2-jz-6Z9"/>
                             <constraint firstAttribute="trailing" secondItem="5ci-Ta-okb" secondAttribute="trailing" constant="10" id="vb9-VL-zcZ"/>
-                            <constraint firstItem="n6T-HZ-48r" firstAttribute="top" secondItem="NTd-yt-Mmb" secondAttribute="top" id="yTL-vc-7Aa"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="contentView" destination="2PD-Y9-HBD" id="FAc-vP-qic"/>
                         <outlet property="curveView" destination="qry-9I-MNz" id="NbG-9A-nWX"/>
-                        <outlet property="progressBar" destination="n6T-HZ-48r" id="PfC-8j-Afx"/>
+                        <outlet property="lineGradientprogressBar" destination="QWY-Qu-xjN" id="6xD-wQ-aaf"/>
+                        <outlet property="lineProgressBar" destination="buZ-GZ-ck4" id="vhb-lZ-Hc8"/>
                         <outlet property="progressView" destination="Up4-45-FA1" id="Hiu-iB-zz6"/>
                         <outlet property="zanView" destination="5ci-Ta-okb" id="ant-2e-3cV"/>
                     </connections>

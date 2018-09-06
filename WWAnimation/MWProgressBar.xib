@@ -35,7 +35,7 @@
                 <constraint firstItem="0eO-Rl-XgK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ur0-zi-arw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-165.5" y="-11"/>
+            <point key="canvasLocation" x="-188" y="-30"/>
         </view>
     </objects>
 </document>
