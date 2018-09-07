@@ -21,9 +21,10 @@
 		4A132F7E213FCDCE001A6D39 /* MWProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */; };
 		4A13B45F2141309F00FFA15D /* WWLineGradientProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A13B45E2141309F00FFA15D /* WWLineGradientProgress.swift */; };
 		4A13B4612141312400FFA15D /* WWBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A13B4602141312400FFA15D /* WWBaseView.swift */; };
-		4A7BAFBE213D3C3200592FF5 /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BAFBD213D3C3200592FF5 /* RadarView.swift */; };
+		4A33B9C8214251F200C92FB5 /* WWLoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33B9C7214251F200C92FB5 /* WWLoadingController.swift */; };
+		4A7BAFBE213D3C3200592FF5 /* WWRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BAFBD213D3C3200592FF5 /* WWRadarView.swift */; };
 		4A7BAFC0213E25AF00592FF5 /* EmitterZanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */; };
-		4AC73D2C213FB40300131192 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC73D2B213FB40300131192 /* LoadingView.swift */; };
+		4AC73D2C213FB40300131192 /* WWMusicLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +56,10 @@
 		4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWProgressBar.swift; sourceTree = "<group>"; };
 		4A13B45E2141309F00FFA15D /* WWLineGradientProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLineGradientProgress.swift; sourceTree = "<group>"; };
 		4A13B4602141312400FFA15D /* WWBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWBaseView.swift; sourceTree = "<group>"; };
-		4A7BAFBD213D3C3200592FF5 /* RadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
+		4A33B9C7214251F200C92FB5 /* WWLoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLoadingController.swift; sourceTree = "<group>"; };
+		4A7BAFBD213D3C3200592FF5 /* WWRadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRadarView.swift; sourceTree = "<group>"; };
 		4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterZanView.swift; sourceTree = "<group>"; };
-		4AC73D2B213FB40300131192 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMusicLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,10 @@
 		000604E7213550C8005D2AC9 /* WWAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */,
+				005618442136708000DDF16A /* WWProgressAnimatedView.swift */,
+				4A7BAFBD213D3C3200592FF5 /* WWRadarView.swift */,
+				4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */,
 				4A13B4602141312400FFA15D /* WWBaseView.swift */,
 				4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */,
 				4A132F7B213FCDCE001A6D39 /* MWProgressBar.xib */,
@@ -108,14 +114,11 @@
 				000604EF213550CA005D2AC9 /* Assets.xcassets */,
 				000604F1213550CA005D2AC9 /* LaunchScreen.storyboard */,
 				000604F4213550CA005D2AC9 /* Info.plist */,
-				0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */,
-				005618442136708000DDF16A /* WWProgressAnimatedView.swift */,
 				00A3BC372136830F001E83DB /* MWBezierCurveView.swift */,
-				4A7BAFBD213D3C3200592FF5 /* RadarView.swift */,
 				4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */,
-				4AC73D2B213FB40300131192 /* LoadingView.swift */,
 				4A132F79213FCCAB001A6D39 /* WWLineProgress.swift */,
 				4A13B45E2141309F00FFA15D /* WWLineGradientProgress.swift */,
+				4A33B9C7214251F200C92FB5 /* WWLoadingController.swift */,
 			);
 			path = WWAnimation;
 			sourceTree = "<group>";
@@ -233,11 +236,12 @@
 			files = (
 				00A3BC382136830F001E83DB /* MWBezierCurveView.swift in Sources */,
 				4A7BAFC0213E25AF00592FF5 /* EmitterZanView.swift in Sources */,
-				4A7BAFBE213D3C3200592FF5 /* RadarView.swift in Sources */,
+				4A7BAFBE213D3C3200592FF5 /* WWRadarView.swift in Sources */,
 				005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */,
+				4A33B9C8214251F200C92FB5 /* WWLoadingController.swift in Sources */,
 				000604EB213550C8005D2AC9 /* ViewController.swift in Sources */,
 				4A13B45F2141309F00FFA15D /* WWLineGradientProgress.swift in Sources */,
-				4AC73D2C213FB40300131192 /* LoadingView.swift in Sources */,
+				4AC73D2C213FB40300131192 /* WWMusicLoadingView.swift in Sources */,
 				0006050B21355153005D2AC9 /* WWIndefiniteAnimatedView.swift in Sources */,
 				000604E9213550C8005D2AC9 /* AppDelegate.swift in Sources */,
 				4A132F7E213FCDCE001A6D39 /* MWProgressBar.swift in Sources */,

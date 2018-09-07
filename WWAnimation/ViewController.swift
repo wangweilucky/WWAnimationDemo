@@ -37,9 +37,9 @@ class ViewController: UIViewController {
         progressView.addSubview(progressAniView)
         self.progressAniView = progressAniView
         
-        timer = Timer(timeInterval: 1, repeats: true, block: { _ in
-            progressAniView.strokeEnd = progressAniView.strokeEnd + 0.1
-        })
+//        timer = Timer(timeInterval: 1, repeats: true, block: { _ in
+//            self.progressAniView.set(progress: self.progressAniView.strokeEnd + 0.1)
+//        })
         RunLoop.main.add(timer!, forMode: .commonModes)
         
         

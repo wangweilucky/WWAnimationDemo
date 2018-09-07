@@ -12,7 +12,9 @@ class WWIndefiniteAnimatedView: UIView {
     
     let strokeColor = UIColor.black
     let strokeThickness: CGFloat = 2.0
-    let radius: CGFloat = 16.0
+    var radius: CGFloat {
+        return self.bounds.width * 0.5
+    }
     
     lazy var indefiniteAnimatedLayer: CAShapeLayer = {
         
@@ -60,7 +62,7 @@ class WWIndefiniteAnimatedView: UIView {
     
         maskLayer.add(animation, forKey: "rotate")
         
-        // 不加这段也是可以的，为啥
+        // 不加这段也是可以的?
 //        let animationGroup = CAAnimationGroup()
 //        animationGroup.duration = animationDuration
 //        animationGroup.repeatCount = .infinity;
@@ -88,6 +90,8 @@ class WWIndefiniteAnimatedView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
+        self.layer.addSublayer(indefiniteAnimatedLayer)
     }
 }

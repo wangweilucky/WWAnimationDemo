@@ -12,16 +12,13 @@ class WWProgressAnimatedView: UIView {
 
     let strokeColor = UIColor.black.cgColor
     let strokeThickness: CGFloat = 2.0
-    let radius: CGFloat = 16.0
-    
-    var strokeEnd: CGFloat = 0{
-        didSet {
-            if strokeEnd == 1 {return}
-            self.progressAnimatedLayer.strokeEnd = strokeEnd
-        }
+    var radius: CGFloat {
+        return self.bounds.width * 0.5
     }
     
-    lazy var progressAnimatedLayer: CAShapeLayer = {
+    var progressAnimatedLayer = CAShapeLayer()
+    
+    func initMyView() {
         
         let arcCenter = CGPoint(x: radius + strokeThickness * 0.5 + 5,
                                 y: radius + strokeThickness * 0.5 + 5)
@@ -32,7 +29,7 @@ class WWProgressAnimatedView: UIView {
                                         endAngle: (CGFloat(Double.pi * 1.5 + Double.pi * 2)) ,
                                         clockwise: true)
         
-        var progressAnimatedLayer = CAShapeLayer()
+        self.progressAnimatedLayer = CAShapeLayer()
         progressAnimatedLayer.contentsScale = UIScreen.main.scale
         progressAnimatedLayer.fillColor = UIColor.clear.cgColor
         progressAnimatedLayer.strokeColor = strokeColor
@@ -41,22 +38,39 @@ class WWProgressAnimatedView: UIView {
         progressAnimatedLayer.lineJoin = kCALineJoinBevel
         progressAnimatedLayer.path = smoothedPath.cgPath
         progressAnimatedLayer.strokeStart = 0
+        progressAnimatedLayer.strokeEnd = 0
         progressAnimatedLayer.frame = CGRect(x: 0,
                                              y: 0,
                                              width: arcCenter.x * 2,
                                              height: arcCenter.y * 2)
         
         self.layer.addSublayer(progressAnimatedLayer)
-        return progressAnimatedLayer
-    }()
+    }
+    
+    func set(fillColor: UIColor? = UIColor.clear,
+             strokeColor: UIColor? = UIColor.black,
+             lineWidth: CGFloat? = 2.0) {
+        
+        if let fillColor = fillColor { progressAnimatedLayer.fillColor = fillColor.cgColor }
+        if let strokeColor = strokeColor { progressAnimatedLayer.strokeColor = strokeColor.cgColor }
+        if let lineWidth = lineWidth { progressAnimatedLayer.lineWidth = lineWidth }
+    }
+    
+    func set(progress: CGFloat) {
+        var p = progress
+        if p >= 1 {p = 1}
+        self.progressAnimatedLayer.strokeEnd = p
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.layer.addSublayer(progressAnimatedLayer)
+        self.initMyView()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
+        self.initMyView()
     }
 }
