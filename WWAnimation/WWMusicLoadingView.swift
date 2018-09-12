@@ -10,6 +10,9 @@ import UIKit
 
 class WWMusicLoadingView: UIView {
 
+    var pulseLayerFillColor = UIColor.orange
+    var replicatorLayerInstanceCount: Int = 0
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.initMyView()
@@ -54,25 +57,24 @@ extension WWMusicLoadingView {
              instanceCount: Int? = 8,
              instanceDelay: CFTimeInterval? = 1.0) {
         
-        if let fillColor = fillColor { self.pulseLayerFillColor = fillColor }
-        if let instanceCount = instanceCount { self.replicatorLayerInstanceCount = instanceCount }
-        if let instanceDelay = instanceDelay { self.replicatorLayerInstanceDelay = instanceDelay }
-        
+//        if let fillColor = fillColor { self.pulseLayerFillColor = fillColor }
+//        if let instanceCount = instanceCount { self.replicatorLayerInstanceCount = instanceCount }
+//        if let instanceDelay = instanceDelay { self.replicatorLayerInstanceDelay = instanceDelay }
     }
     
     func startAnimation() {
-        if animation {return}
-        pulseLayer.fillColor = pulseLayerFillColor.cgColor
-        replicatorLayer.instanceCount = replicatorLayerInstanceCount
-        replicatorLayer.instanceDelay = replicatorLayerInstanceDelay
-        pulseLayer.add(groupAnim, forKey: "replicatorLayerAnimation")
-        replicatorLayer.addSublayer(pulseLayer)
-        self.layer.addSublayer(replicatorLayer)
-        animation = true
+//        if animation {return}
+//        pulseLayer.fillColor = pulseLayerFillColor.cgColor
+//        replicatorLayer.instanceCount = replicatorLayerInstanceCount
+//        replicatorLayer.instanceDelay = replicatorLayerInstanceDelay
+//        pulseLayer.add(groupAnim, forKey: "replicatorLayerAnimation")
+//        replicatorLayer.addSublayer(pulseLayer)
+//        self.layer.addSublayer(replicatorLayer)
+//        animation = true
     }
     
     func stopAnimation() {
-        replicatorLayer.removeFromSuperlayer()
-        animation = false
+//        replicatorLayer.removeFromSuperlayer()
+//        animation = false
     }
 }

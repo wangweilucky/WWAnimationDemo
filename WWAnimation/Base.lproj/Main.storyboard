@@ -234,9 +234,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mB2-nW-u83">
                                 <rect key="frame" x="187.5" y="64" width="94" height="94"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B48-sg-zjc" customClass="WWRadarView" customModule="WWAnimation" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B48-sg-zjc">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twu-Hn-vZH" customClass="WWRotateProgressAnimationView" customModule="WWAnimation" customModuleProvider="target">
+                                                <rect key="frame" x="35" y="34.5" width="25" height="25"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="LmR-PV-HgL"/>
+                                                    <constraint firstAttribute="width" constant="25" id="t90-Dl-26W"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="twu-Hn-vZH" firstAttribute="centerX" secondItem="B48-sg-zjc" secondAttribute="centerX" id="Mo8-BQ-Jbd"/>
+                                            <constraint firstItem="twu-Hn-vZH" firstAttribute="centerY" secondItem="B48-sg-zjc" secondAttribute="centerY" id="lZP-x3-XU2"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -249,7 +263,21 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pU-WF-jzh">
                                 <rect key="frame" x="281.5" y="64" width="93.5" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKN-sf-NZZ" customClass="WWRotateView" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="34.5" y="34.5" width="25" height="25"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="hrI-VN-ccI"/>
+                                            <constraint firstAttribute="height" constant="25" id="ufx-lL-QhG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cKN-sf-NZZ" firstAttribute="centerY" secondItem="3pU-WF-jzh" secondAttribute="centerY" id="4qR-uP-dCT"/>
+                                    <constraint firstItem="cKN-sf-NZZ" firstAttribute="centerX" secondItem="3pU-WF-jzh" secondAttribute="centerX" id="CMF-ai-nAD"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

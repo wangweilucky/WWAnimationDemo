@@ -36,12 +36,12 @@ class WWLoadingController: UIViewController {
     
     func showRadarView() {
         
-        radarView.startAnimation()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
-            self.radarView.stopAnimation()
-            self.radarViewAnimation = !self.radarViewAnimation
-            self.showRadarView()
-        }
+//        radarView.startAnimation()
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+//            self.radarView.stopAnimation()
+//            self.radarViewAnimation = !self.radarViewAnimation
+//            self.showRadarView()
+//        }
         
     }
 

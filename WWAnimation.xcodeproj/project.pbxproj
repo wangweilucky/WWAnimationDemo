@@ -16,6 +16,8 @@
 		0006050B21355153005D2AC9 /* WWIndefiniteAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */; };
 		005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005618442136708000DDF16A /* WWProgressAnimatedView.swift */; };
 		00A3BC382136830F001E83DB /* MWBezierCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3BC372136830F001E83DB /* MWBezierCurveView.swift */; };
+		4A0BCF682148406D00425649 /* WWRotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCF672148406D00425649 /* WWRotateView.swift */; };
+		4A0BCF6A2148439600425649 /* WWRotateProgressAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BCF692148439600425649 /* WWRotateProgressAnimationView.swift */; };
 		4A132F7A213FCCAB001A6D39 /* WWLineProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A132F79213FCCAB001A6D39 /* WWLineProgress.swift */; };
 		4A132F7D213FCDCE001A6D39 /* MWProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A132F7B213FCDCE001A6D39 /* MWProgressBar.xib */; };
 		4A132F7E213FCDCE001A6D39 /* MWProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */; };
@@ -51,6 +53,8 @@
 		0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWIndefiniteAnimatedView.swift; sourceTree = "<group>"; };
 		005618442136708000DDF16A /* WWProgressAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWProgressAnimatedView.swift; sourceTree = "<group>"; };
 		00A3BC372136830F001E83DB /* MWBezierCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBezierCurveView.swift; sourceTree = "<group>"; };
+		4A0BCF672148406D00425649 /* WWRotateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRotateView.swift; sourceTree = "<group>"; };
+		4A0BCF692148439600425649 /* WWRotateProgressAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRotateProgressAnimationView.swift; sourceTree = "<group>"; };
 		4A132F79213FCCAB001A6D39 /* WWLineProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLineProgress.swift; sourceTree = "<group>"; };
 		4A132F7B213FCDCE001A6D39 /* MWProgressBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MWProgressBar.xib; sourceTree = "<group>"; };
 		4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWProgressBar.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */,
 				005618442136708000DDF16A /* WWProgressAnimatedView.swift */,
 				4A7BAFBD213D3C3200592FF5 /* WWRadarView.swift */,
+				4A0BCF672148406D00425649 /* WWRotateView.swift */,
+				4A0BCF692148439600425649 /* WWRotateProgressAnimationView.swift */,
 				4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */,
 				4A13B4602141312400FFA15D /* WWBaseView.swift */,
 				4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */,
@@ -236,6 +242,7 @@
 			files = (
 				00A3BC382136830F001E83DB /* MWBezierCurveView.swift in Sources */,
 				4A7BAFC0213E25AF00592FF5 /* EmitterZanView.swift in Sources */,
+				4A0BCF6A2148439600425649 /* WWRotateProgressAnimationView.swift in Sources */,
 				4A7BAFBE213D3C3200592FF5 /* WWRadarView.swift in Sources */,
 				005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */,
 				4A33B9C8214251F200C92FB5 /* WWLoadingController.swift in Sources */,
@@ -247,6 +254,7 @@
 				4A132F7E213FCDCE001A6D39 /* MWProgressBar.swift in Sources */,
 				4A132F7A213FCCAB001A6D39 /* WWLineProgress.swift in Sources */,
 				4A13B4612141312400FFA15D /* WWBaseView.swift in Sources */,
+				4A0BCF682148406D00425649 /* WWRotateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
