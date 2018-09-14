@@ -26,6 +26,8 @@
 		4A33B9C8214251F200C92FB5 /* WWLoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33B9C7214251F200C92FB5 /* WWLoadingController.swift */; };
 		4A7BAFBE213D3C3200592FF5 /* WWRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BAFBD213D3C3200592FF5 /* WWRadarView.swift */; };
 		4A7BAFC0213E25AF00592FF5 /* EmitterZanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */; };
+		4A83F3EF214B575000ADEA82 /* ActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3EE214B575000ADEA82 /* ActivityIndicatorShape.swift */; };
+		4A83F3F1214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3F0214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift */; };
 		4AC73D2C213FB40300131192 /* WWMusicLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		4A33B9C7214251F200C92FB5 /* WWLoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWLoadingController.swift; sourceTree = "<group>"; };
 		4A7BAFBD213D3C3200592FF5 /* WWRadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWRadarView.swift; sourceTree = "<group>"; };
 		4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterZanView.swift; sourceTree = "<group>"; };
+		4A83F3EE214B575000ADEA82 /* ActivityIndicatorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		4A83F3F0214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScaleView.swift; sourceTree = "<group>"; };
 		4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMusicLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +109,7 @@
 		000604E7213550C8005D2AC9 /* WWAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				4A83F3EE214B575000ADEA82 /* ActivityIndicatorShape.swift */,
 				0006050A21355153005D2AC9 /* WWIndefiniteAnimatedView.swift */,
 				005618442136708000DDF16A /* WWProgressAnimatedView.swift */,
 				4A7BAFBD213D3C3200592FF5 /* WWRadarView.swift */,
@@ -125,6 +130,7 @@
 				4A132F79213FCCAB001A6D39 /* WWLineProgress.swift */,
 				4A13B45E2141309F00FFA15D /* WWLineGradientProgress.swift */,
 				4A33B9C7214251F200C92FB5 /* WWLoadingController.swift */,
+				4A83F3F0214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift */,
 			);
 			path = WWAnimation;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				4A0BCF6A2148439600425649 /* WWRotateProgressAnimationView.swift in Sources */,
 				4A7BAFBE213D3C3200592FF5 /* WWRadarView.swift in Sources */,
 				005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */,
+				4A83F3EF214B575000ADEA82 /* ActivityIndicatorShape.swift in Sources */,
 				4A33B9C8214251F200C92FB5 /* WWLoadingController.swift in Sources */,
 				000604EB213550C8005D2AC9 /* ViewController.swift in Sources */,
 				4A13B45F2141309F00FFA15D /* WWLineGradientProgress.swift in Sources */,
@@ -255,6 +262,7 @@
 				4A132F7A213FCCAB001A6D39 /* WWLineProgress.swift in Sources */,
 				4A13B4612141312400FFA15D /* WWBaseView.swift in Sources */,
 				4A0BCF682148406D00425649 /* WWRotateView.swift in Sources */,
+				4A83F3F1214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

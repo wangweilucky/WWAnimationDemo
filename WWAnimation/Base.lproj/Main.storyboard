@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -279,6 +280,24 @@
                                     <constraint firstItem="cKN-sf-NZZ" firstAttribute="centerX" secondItem="3pU-WF-jzh" secondAttribute="centerX" id="CMF-ai-nAD"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drB-hD-ek0">
+                                <rect key="frame" x="0.0" y="158" width="93.5" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwR-iV-FtC" customClass="WWActivityIndicatorAnimationLineScaleView" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="26" width="42" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GwR-iV-FtC" secondAttribute="height" multiplier="1:1" id="SRV-wr-nur"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GwR-iV-FtC" firstAttribute="centerX" secondItem="drB-hD-ek0" secondAttribute="centerX" id="BNx-em-ejD"/>
+                                    <constraint firstItem="GwR-iV-FtC" firstAttribute="width" secondItem="drB-hD-ek0" secondAttribute="width" multiplier="0.45" id="epW-lP-7fz"/>
+                                    <constraint firstItem="GwR-iV-FtC" firstAttribute="centerY" secondItem="drB-hD-ek0" secondAttribute="centerY" id="yBy-5O-jh1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -289,12 +308,16 @@
                             <constraint firstItem="mB2-nW-u83" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="GpS-Bs-4L7"/>
                             <constraint firstItem="fpF-v3-fod" firstAttribute="leading" secondItem="X46-Rb-jhY" secondAttribute="leading" id="LK3-jf-D4W"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="OJr-v6-mye"/>
+                            <constraint firstItem="drB-hD-ek0" firstAttribute="width" secondItem="3pU-WF-jzh" secondAttribute="width" id="OpE-fp-poi"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="VQv-cr-MR0"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="VYZ-sh-8QQ"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="a7G-tx-JEA"/>
                             <constraint firstItem="fpF-v3-fod" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="b1a-U1-nbf"/>
+                            <constraint firstItem="drB-hD-ek0" firstAttribute="leading" secondItem="X46-Rb-jhY" secondAttribute="leading" id="bOA-JP-NUc"/>
                             <constraint firstAttribute="trailing" secondItem="3pU-WF-jzh" secondAttribute="trailing" id="gas-c2-Vxo"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="leading" secondItem="vsx-TM-1my" secondAttribute="trailing" id="gnC-y1-Udr"/>
+                            <constraint firstItem="drB-hD-ek0" firstAttribute="height" secondItem="3pU-WF-jzh" secondAttribute="height" id="ipr-Eg-G4a"/>
+                            <constraint firstItem="drB-hD-ek0" firstAttribute="top" secondItem="fpF-v3-fod" secondAttribute="bottom" id="kkn-bx-OBl"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="leading" secondItem="fpF-v3-fod" secondAttribute="trailing" id="oSF-sK-OG9"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="leading" secondItem="mB2-nW-u83" secondAttribute="trailing" id="z7L-YC-dAo"/>
                         </constraints>
