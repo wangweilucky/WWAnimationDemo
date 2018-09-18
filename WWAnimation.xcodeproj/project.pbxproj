@@ -28,6 +28,9 @@
 		4A7BAFC0213E25AF00592FF5 /* EmitterZanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */; };
 		4A83F3EF214B575000ADEA82 /* ActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3EE214B575000ADEA82 /* ActivityIndicatorShape.swift */; };
 		4A83F3F1214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3F0214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift */; };
+		4A83F3F5214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3F4214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift */; };
+		4A83F3F7214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3F6214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift */; };
+		4AB5BE1A2150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5BE192150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift */; };
 		4AC73D2C213FB40300131192 /* WWMusicLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,9 @@
 		4A7BAFBF213E25AF00592FF5 /* EmitterZanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterZanView.swift; sourceTree = "<group>"; };
 		4A83F3EE214B575000ADEA82 /* ActivityIndicatorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		4A83F3F0214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScaleView.swift; sourceTree = "<group>"; };
+		4A83F3F4214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScalePartyView.swift; sourceTree = "<group>"; };
+		4A83F3F6214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScalePartyNormalView.swift; sourceTree = "<group>"; };
+		4AB5BE192150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScalePulseOutView.swift; sourceTree = "<group>"; };
 		4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMusicLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +137,9 @@
 				4A13B45E2141309F00FFA15D /* WWLineGradientProgress.swift */,
 				4A33B9C7214251F200C92FB5 /* WWLoadingController.swift */,
 				4A83F3F0214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift */,
+				4A83F3F4214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift */,
+				4A83F3F6214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift */,
+				4AB5BE192150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift */,
 			);
 			path = WWAnimation;
 			sourceTree = "<group>";
@@ -258,9 +267,12 @@
 				4AC73D2C213FB40300131192 /* WWMusicLoadingView.swift in Sources */,
 				0006050B21355153005D2AC9 /* WWIndefiniteAnimatedView.swift in Sources */,
 				000604E9213550C8005D2AC9 /* AppDelegate.swift in Sources */,
+				4A83F3F7214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift in Sources */,
 				4A132F7E213FCDCE001A6D39 /* MWProgressBar.swift in Sources */,
+				4AB5BE1A2150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift in Sources */,
 				4A132F7A213FCCAB001A6D39 /* WWLineProgress.swift in Sources */,
 				4A13B4612141312400FFA15D /* WWBaseView.swift in Sources */,
+				4A83F3F5214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift in Sources */,
 				4A0BCF682148406D00425649 /* WWRotateView.swift in Sources */,
 				4A83F3F1214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift in Sources */,
 			);

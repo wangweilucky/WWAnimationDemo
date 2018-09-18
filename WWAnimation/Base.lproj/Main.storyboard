@@ -199,7 +199,7 @@
                                 <rect key="frame" x="0.0" y="64" width="94" height="94"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nb0-JO-nhC" customClass="WWIndefiniteAnimatedView" customModule="WWAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="34.5" y="34.5" width="25" height="25"/>
+                                        <rect key="frame" x="35" y="35" width="25" height="25"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="e72-vJ-900"/>
@@ -218,7 +218,7 @@
                                 <rect key="frame" x="94" y="64" width="93.5" height="94"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EN-ck-xng" customClass="WWProgressAnimatedView" customModule="WWAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="34.5" y="34.5" width="25" height="25"/>
+                                        <rect key="frame" x="34.5" y="35" width="25" height="25"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="REn-wR-Nxm"/>
@@ -239,7 +239,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twu-Hn-vZH" customClass="WWRotateProgressAnimationView" customModule="WWAnimation" customModuleProvider="target">
-                                                <rect key="frame" x="35" y="34.5" width="25" height="25"/>
+                                                <rect key="frame" x="35" y="35" width="25" height="25"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="LmR-PV-HgL"/>
@@ -266,7 +266,7 @@
                                 <rect key="frame" x="281.5" y="64" width="93.5" height="94"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKN-sf-NZZ" customClass="WWRotateView" customModule="WWAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="34.5" y="34.5" width="25" height="25"/>
+                                        <rect key="frame" x="34.5" y="35" width="25" height="25"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="hrI-VN-ccI"/>
@@ -281,10 +281,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drB-hD-ek0">
-                                <rect key="frame" x="0.0" y="158" width="93.5" height="94"/>
+                                <rect key="frame" x="0.0" y="158" width="94" height="93.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwR-iV-FtC" customClass="WWActivityIndicatorAnimationLineScaleView" customModule="WWAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="26" width="42" height="42"/>
+                                        <rect key="frame" x="26" y="25.5" width="42" height="42"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GwR-iV-FtC" secondAttribute="height" multiplier="1:1" id="SRV-wr-nur"/>
@@ -298,27 +298,93 @@
                                     <constraint firstItem="GwR-iV-FtC" firstAttribute="centerY" secondItem="drB-hD-ek0" secondAttribute="centerY" id="yBy-5O-jh1"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-eK-fro">
+                                <rect key="frame" x="94" y="158" width="93.5" height="93.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEA-8Y-Xoa" customClass="WWActivityIndicatorAnimationLineScalePartyView" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="41.5" height="41.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eEA-8Y-Xoa" secondAttribute="height" multiplier="1:1" id="K2U-0e-I41"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="centerY" secondItem="Mab-eK-fro" secondAttribute="centerY" id="DfA-pQ-7xH"/>
+                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="top" secondItem="Mab-eK-fro" secondAttribute="top" constant="26" id="XNA-Op-B3M"/>
+                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="centerX" secondItem="Mab-eK-fro" secondAttribute="centerX" id="yhe-pF-aHm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVt-3n-kOU">
+                                <rect key="frame" x="187.5" y="158" width="93.5" height="93.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wb-TW-kTX" customClass="WWActivityIndicatorAnimationLineScalePartyNormalView" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="41.5" height="41.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4Wb-TW-kTX" secondAttribute="height" multiplier="1:1" id="cAL-YU-A2F"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="centerY" secondItem="cVt-3n-kOU" secondAttribute="centerY" id="CDV-jd-gjm"/>
+                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="top" secondItem="cVt-3n-kOU" secondAttribute="top" constant="26" id="F1E-lL-q57"/>
+                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="centerX" secondItem="cVt-3n-kOU" secondAttribute="centerX" id="mbY-vU-hrY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHH-4W-A7x">
+                                <rect key="frame" x="281" y="158" width="93.5" height="93.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Oe-RR-Jt1" customClass="WWActivityIndicatorAnimationLineScalePulseOutView" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="41.5" height="41.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0Oe-RR-Jt1" secondAttribute="height" multiplier="1:1" id="iQG-Is-Rfe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="top" secondItem="lHH-4W-A7x" secondAttribute="top" constant="26" id="LPp-cj-AGk"/>
+                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="centerY" secondItem="lHH-4W-A7x" secondAttribute="centerY" id="XY3-K7-cVX"/>
+                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="centerX" secondItem="lHH-4W-A7x" secondAttribute="centerX" id="cIA-Im-rps"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="1kx-W3-Toy"/>
+                            <constraint firstItem="Mab-eK-fro" firstAttribute="leading" secondItem="drB-hD-ek0" secondAttribute="trailing" id="4CM-mx-y5S"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="6nl-CV-E5R"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="FkI-5F-VX2"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="G2o-kr-Iah"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="GpS-Bs-4L7"/>
+                            <constraint firstItem="Mab-eK-fro" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="HcR-rl-0Fd"/>
+                            <constraint firstItem="lHH-4W-A7x" firstAttribute="leading" secondItem="cVt-3n-kOU" secondAttribute="trailing" id="JBD-uY-IZB"/>
+                            <constraint firstItem="Mab-eK-fro" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="KZe-ii-nTa"/>
                             <constraint firstItem="fpF-v3-fod" firstAttribute="leading" secondItem="X46-Rb-jhY" secondAttribute="leading" id="LK3-jf-D4W"/>
+                            <constraint firstItem="cVt-3n-kOU" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="M65-lf-kxG"/>
+                            <constraint firstItem="Mab-eK-fro" firstAttribute="top" secondItem="vsx-TM-1my" secondAttribute="bottom" id="No0-sS-4ca"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="OJr-v6-mye"/>
                             <constraint firstItem="drB-hD-ek0" firstAttribute="width" secondItem="3pU-WF-jzh" secondAttribute="width" id="OpE-fp-poi"/>
+                            <constraint firstItem="lHH-4W-A7x" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="QtM-jQ-tkP"/>
+                            <constraint firstItem="lHH-4W-A7x" firstAttribute="top" secondItem="3pU-WF-jzh" secondAttribute="bottom" id="UsS-RH-q1a"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="VQv-cr-MR0"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="VYZ-sh-8QQ"/>
+                            <constraint firstItem="cVt-3n-kOU" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="XeY-nI-pPy"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="a7G-tx-JEA"/>
                             <constraint firstItem="fpF-v3-fod" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="b1a-U1-nbf"/>
                             <constraint firstItem="drB-hD-ek0" firstAttribute="leading" secondItem="X46-Rb-jhY" secondAttribute="leading" id="bOA-JP-NUc"/>
                             <constraint firstAttribute="trailing" secondItem="3pU-WF-jzh" secondAttribute="trailing" id="gas-c2-Vxo"/>
+                            <constraint firstItem="cVt-3n-kOU" firstAttribute="leading" secondItem="Mab-eK-fro" secondAttribute="trailing" id="gn8-Tg-0qx"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="leading" secondItem="vsx-TM-1my" secondAttribute="trailing" id="gnC-y1-Udr"/>
                             <constraint firstItem="drB-hD-ek0" firstAttribute="height" secondItem="3pU-WF-jzh" secondAttribute="height" id="ipr-Eg-G4a"/>
                             <constraint firstItem="drB-hD-ek0" firstAttribute="top" secondItem="fpF-v3-fod" secondAttribute="bottom" id="kkn-bx-OBl"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="leading" secondItem="fpF-v3-fod" secondAttribute="trailing" id="oSF-sK-OG9"/>
+                            <constraint firstItem="lHH-4W-A7x" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="p3w-Qa-OqN"/>
+                            <constraint firstItem="cVt-3n-kOU" firstAttribute="top" secondItem="mB2-nW-u83" secondAttribute="bottom" id="taO-Ul-bBT"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="leading" secondItem="mB2-nW-u83" secondAttribute="trailing" id="z7L-YC-dAo"/>
                         </constraints>
                     </view>
