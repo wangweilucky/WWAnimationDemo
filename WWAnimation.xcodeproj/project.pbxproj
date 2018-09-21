@@ -30,8 +30,17 @@
 		4A83F3F1214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3F0214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift */; };
 		4A83F3F5214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3F4214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift */; };
 		4A83F3F7214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83F3F6214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift */; };
+		4AA0A3DF21522A5E0047604A /* WWBasketableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0A3DE21522A5E0047604A /* WWBasketableController.swift */; };
 		4AB5BE1A2150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5BE192150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift */; };
+		4AB5BE212151EC9E00C268F2 /* WWActivityIndicatorCircleView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5BE202151EC9E00C268F2 /* WWActivityIndicatorCircleView1.swift */; };
 		4AC73D2C213FB40300131192 /* WWMusicLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */; };
+		4AFCEF9F215379A000AE38B7 /* WWActivityIndicatorCircleView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCEF9E215379A000AE38B7 /* WWActivityIndicatorCircleView2.swift */; };
+		4AFCEFA121537AB400AE38B7 /* WWActivityIndicatorCircleView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCEFA021537AB400AE38B7 /* WWActivityIndicatorCircleView3.swift */; };
+		4AFCEFA32153904900AE38B7 /* WWActivityIndicatorCircleView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCEFA22153904900AE38B7 /* WWActivityIndicatorCircleView4.swift */; };
+		4AFCEFA5215395DE00AE38B7 /* WWActivityIndicatorCircleView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCEFA4215395DE00AE38B7 /* WWActivityIndicatorCircleView5.swift */; };
+		4AFCEFA72153B5AC00AE38B7 /* WWActivityIndicatorCircleView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCEFA62153B5AC00AE38B7 /* WWActivityIndicatorCircleView6.swift */; };
+		4AFCEFA92153B8C900AE38B7 /* WWPaySuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCEFA82153B8C900AE38B7 /* WWPaySuccessController.swift */; };
+		4AFCEFAB2153BB0D00AE38B7 /* WWPayProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFCEFAA2153BB0C00AE38B7 /* WWPayProcessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +81,17 @@
 		4A83F3F0214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScaleView.swift; sourceTree = "<group>"; };
 		4A83F3F4214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScalePartyView.swift; sourceTree = "<group>"; };
 		4A83F3F6214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScalePartyNormalView.swift; sourceTree = "<group>"; };
+		4AA0A3DE21522A5E0047604A /* WWBasketableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWBasketableController.swift; sourceTree = "<group>"; };
 		4AB5BE192150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorAnimationLineScalePulseOutView.swift; sourceTree = "<group>"; };
+		4AB5BE202151EC9E00C268F2 /* WWActivityIndicatorCircleView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorCircleView1.swift; sourceTree = "<group>"; };
 		4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWMusicLoadingView.swift; sourceTree = "<group>"; };
+		4AFCEF9E215379A000AE38B7 /* WWActivityIndicatorCircleView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorCircleView2.swift; sourceTree = "<group>"; };
+		4AFCEFA021537AB400AE38B7 /* WWActivityIndicatorCircleView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorCircleView3.swift; sourceTree = "<group>"; };
+		4AFCEFA22153904900AE38B7 /* WWActivityIndicatorCircleView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorCircleView4.swift; sourceTree = "<group>"; };
+		4AFCEFA4215395DE00AE38B7 /* WWActivityIndicatorCircleView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorCircleView5.swift; sourceTree = "<group>"; };
+		4AFCEFA62153B5AC00AE38B7 /* WWActivityIndicatorCircleView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWActivityIndicatorCircleView6.swift; sourceTree = "<group>"; };
+		4AFCEFA82153B8C900AE38B7 /* WWPaySuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWPaySuccessController.swift; sourceTree = "<group>"; };
+		4AFCEFAA2153BB0C00AE38B7 /* WWPayProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWPayProcessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +139,13 @@
 				4A7BAFBD213D3C3200592FF5 /* WWRadarView.swift */,
 				4A0BCF672148406D00425649 /* WWRotateView.swift */,
 				4A0BCF692148439600425649 /* WWRotateProgressAnimationView.swift */,
+				4AFCEFAA2153BB0C00AE38B7 /* WWPayProcessView.swift */,
 				4AC73D2B213FB40300131192 /* WWMusicLoadingView.swift */,
 				4A13B4602141312400FFA15D /* WWBaseView.swift */,
 				4A132F7C213FCDCE001A6D39 /* MWProgressBar.swift */,
 				4A132F7B213FCDCE001A6D39 /* MWProgressBar.xib */,
 				000604E8213550C8005D2AC9 /* AppDelegate.swift */,
+				4AA0A3DE21522A5E0047604A /* WWBasketableController.swift */,
 				000604EA213550C8005D2AC9 /* ViewController.swift */,
 				000604EC213550C8005D2AC9 /* Main.storyboard */,
 				000604EF213550CA005D2AC9 /* Assets.xcassets */,
@@ -140,6 +160,13 @@
 				4A83F3F4214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift */,
 				4A83F3F6214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift */,
 				4AB5BE192150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift */,
+				4AB5BE202151EC9E00C268F2 /* WWActivityIndicatorCircleView1.swift */,
+				4AFCEF9E215379A000AE38B7 /* WWActivityIndicatorCircleView2.swift */,
+				4AFCEFA021537AB400AE38B7 /* WWActivityIndicatorCircleView3.swift */,
+				4AFCEFA22153904900AE38B7 /* WWActivityIndicatorCircleView4.swift */,
+				4AFCEFA4215395DE00AE38B7 /* WWActivityIndicatorCircleView5.swift */,
+				4AFCEFA62153B5AC00AE38B7 /* WWActivityIndicatorCircleView6.swift */,
+				4AFCEFA82153B8C900AE38B7 /* WWPaySuccessController.swift */,
 			);
 			path = WWAnimation;
 			sourceTree = "<group>";
@@ -258,6 +285,9 @@
 				00A3BC382136830F001E83DB /* MWBezierCurveView.swift in Sources */,
 				4A7BAFC0213E25AF00592FF5 /* EmitterZanView.swift in Sources */,
 				4A0BCF6A2148439600425649 /* WWRotateProgressAnimationView.swift in Sources */,
+				4AA0A3DF21522A5E0047604A /* WWBasketableController.swift in Sources */,
+				4AB5BE212151EC9E00C268F2 /* WWActivityIndicatorCircleView1.swift in Sources */,
+				4AFCEF9F215379A000AE38B7 /* WWActivityIndicatorCircleView2.swift in Sources */,
 				4A7BAFBE213D3C3200592FF5 /* WWRadarView.swift in Sources */,
 				005618452136708000DDF16A /* WWProgressAnimatedView.swift in Sources */,
 				4A83F3EF214B575000ADEA82 /* ActivityIndicatorShape.swift in Sources */,
@@ -267,14 +297,20 @@
 				4AC73D2C213FB40300131192 /* WWMusicLoadingView.swift in Sources */,
 				0006050B21355153005D2AC9 /* WWIndefiniteAnimatedView.swift in Sources */,
 				000604E9213550C8005D2AC9 /* AppDelegate.swift in Sources */,
+				4AFCEFA121537AB400AE38B7 /* WWActivityIndicatorCircleView3.swift in Sources */,
 				4A83F3F7214BB02A00ADEA82 /* WWActivityIndicatorAnimationLineScalePartyNormalView.swift in Sources */,
 				4A132F7E213FCDCE001A6D39 /* MWProgressBar.swift in Sources */,
+				4AFCEFAB2153BB0D00AE38B7 /* WWPayProcessView.swift in Sources */,
+				4AFCEFA72153B5AC00AE38B7 /* WWActivityIndicatorCircleView6.swift in Sources */,
 				4AB5BE1A2150ED0800C268F2 /* WWActivityIndicatorAnimationLineScalePulseOutView.swift in Sources */,
+				4AFCEFA92153B8C900AE38B7 /* WWPaySuccessController.swift in Sources */,
 				4A132F7A213FCCAB001A6D39 /* WWLineProgress.swift in Sources */,
 				4A13B4612141312400FFA15D /* WWBaseView.swift in Sources */,
 				4A83F3F5214BAA8900ADEA82 /* WWActivityIndicatorAnimationLineScalePartyView.swift in Sources */,
 				4A0BCF682148406D00425649 /* WWRotateView.swift in Sources */,
+				4AFCEFA32153904900AE38B7 /* WWActivityIndicatorCircleView4.swift in Sources */,
 				4A83F3F1214B587B00ADEA82 /* WWActivityIndicatorAnimationLineScaleView.swift in Sources */,
+				4AFCEFA5215395DE00AE38B7 /* WWActivityIndicatorCircleView5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

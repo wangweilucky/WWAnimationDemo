@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3ak-n0-eNY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3ak-n0-eNY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,8 +94,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNt-g5-VHC">
-                                                    <rect key="frame" x="15" y="41" width="0.0" height="0.0"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="篮球的运动轨迹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNt-g5-VHC">
+                                                    <rect key="frame" x="15" y="30.5" width="121.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -108,6 +106,9 @@
                                                 <constraint firstItem="DNt-g5-VHC" firstAttribute="leading" secondItem="KTv-dR-BVY" secondAttribute="leading" constant="15" id="vBO-gl-PDP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5SW-MB-PEw" kind="show" id="tXh-zd-YA0"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="pvC-E8-skB">
                                         <rect key="frame" x="0.0" y="384" width="375" height="82"/>
@@ -116,8 +117,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z8-z7-t4J">
-                                                    <rect key="frame" x="15" y="41" width="0.0" height="0.0"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="防支付完成动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z8-z7-t4J" userLabel="防支付完成动画">
+                                                    <rect key="frame" x="15" y="30.5" width="121.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -128,6 +129,9 @@
                                                 <constraint firstItem="0z8-z7-t4J" firstAttribute="centerY" secondItem="0bm-JH-OK5" secondAttribute="centerY" id="wya-tf-qPn"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vey-CG-nYM" kind="show" id="9Jo-e0-Zca"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="NeC-uw-hn9">
                                         <rect key="frame" x="0.0" y="466" width="375" height="82"/>
@@ -183,6 +187,24 @@
             </objects>
             <point key="canvasLocation" x="-1295.2" y="-132.68365817091455"/>
         </scene>
+        <!--Basketable Controller-->
+        <scene sceneID="O1p-mQ-O5t">
+            <objects>
+                <viewController id="5SW-MB-PEw" customClass="WWBasketableController" customModule="WWAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lAh-UI-Ota"/>
+                        <viewControllerLayoutGuide type="bottom" id="N9J-Aj-A58"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3C3-ew-c1E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTB-Q0-fd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434" y="85"/>
+        </scene>
         <!--loading-->
         <scene sceneID="xMX-VK-hjA">
             <objects>
@@ -199,7 +221,7 @@
                                 <rect key="frame" x="0.0" y="64" width="94" height="94"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nb0-JO-nhC" customClass="WWIndefiniteAnimatedView" customModule="WWAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="35" y="35" width="25" height="25"/>
+                                        <rect key="frame" x="34.5" y="34.5" width="25" height="25"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="e72-vJ-900"/>
@@ -218,7 +240,7 @@
                                 <rect key="frame" x="94" y="64" width="93.5" height="94"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EN-ck-xng" customClass="WWProgressAnimatedView" customModule="WWAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="34.5" y="35" width="25" height="25"/>
+                                        <rect key="frame" x="34" y="34.5" width="25" height="25"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="REn-wR-Nxm"/>
@@ -239,7 +261,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twu-Hn-vZH" customClass="WWRotateProgressAnimationView" customModule="WWAnimation" customModuleProvider="target">
-                                                <rect key="frame" x="35" y="35" width="25" height="25"/>
+                                                <rect key="frame" x="34.5" y="34.5" width="25" height="25"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="LmR-PV-HgL"/>
@@ -266,7 +288,7 @@
                                 <rect key="frame" x="281.5" y="64" width="93.5" height="94"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKN-sf-NZZ" customClass="WWRotateView" customModule="WWAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="34.5" y="35" width="25" height="25"/>
+                                        <rect key="frame" x="34" y="34.5" width="25" height="25"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="hrI-VN-ccI"/>
@@ -298,26 +320,8 @@
                                     <constraint firstItem="GwR-iV-FtC" firstAttribute="centerY" secondItem="drB-hD-ek0" secondAttribute="centerY" id="yBy-5O-jh1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-eK-fro">
-                                <rect key="frame" x="94" y="158" width="93.5" height="93.5"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEA-8Y-Xoa" customClass="WWActivityIndicatorAnimationLineScalePartyView" customModule="WWAnimation" customModuleProvider="target">
-                                        <rect key="frame" x="26" y="26" width="41.5" height="41.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="eEA-8Y-Xoa" secondAttribute="height" multiplier="1:1" id="K2U-0e-I41"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="centerY" secondItem="Mab-eK-fro" secondAttribute="centerY" id="DfA-pQ-7xH"/>
-                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="top" secondItem="Mab-eK-fro" secondAttribute="top" constant="26" id="XNA-Op-B3M"/>
-                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="centerX" secondItem="Mab-eK-fro" secondAttribute="centerX" id="yhe-pF-aHm"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVt-3n-kOU">
-                                <rect key="frame" x="187.5" y="158" width="93.5" height="93.5"/>
+                                <rect key="frame" x="94" y="158" width="93.5" height="93.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wb-TW-kTX" customClass="WWActivityIndicatorAnimationLineScalePartyNormalView" customModule="WWAnimation" customModuleProvider="target">
                                         <rect key="frame" x="26" y="26" width="41.5" height="41.5"/>
@@ -329,13 +333,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="centerY" secondItem="cVt-3n-kOU" secondAttribute="centerY" id="CDV-jd-gjm"/>
-                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="top" secondItem="cVt-3n-kOU" secondAttribute="top" constant="26" id="F1E-lL-q57"/>
-                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="centerX" secondItem="cVt-3n-kOU" secondAttribute="centerX" id="mbY-vU-hrY"/>
+                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="top" secondItem="cVt-3n-kOU" secondAttribute="top" constant="26" id="G8V-cP-srF"/>
+                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="centerY" secondItem="cVt-3n-kOU" secondAttribute="centerY" id="Xah-9G-9iZ"/>
+                                    <constraint firstItem="4Wb-TW-kTX" firstAttribute="centerX" secondItem="cVt-3n-kOU" secondAttribute="centerX" id="xUZ-Z5-EPq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHH-4W-A7x">
-                                <rect key="frame" x="281" y="158" width="93.5" height="93.5"/>
+                                <rect key="frame" x="281.5" y="158" width="93.5" height="93.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Oe-RR-Jt1" customClass="WWActivityIndicatorAnimationLineScalePulseOutView" customModule="WWAnimation" customModuleProvider="target">
                                         <rect key="frame" x="26" y="26" width="41.5" height="41.5"/>
@@ -347,44 +351,172 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="top" secondItem="lHH-4W-A7x" secondAttribute="top" constant="26" id="LPp-cj-AGk"/>
-                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="centerY" secondItem="lHH-4W-A7x" secondAttribute="centerY" id="XY3-K7-cVX"/>
-                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="centerX" secondItem="lHH-4W-A7x" secondAttribute="centerX" id="cIA-Im-rps"/>
+                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="centerY" secondItem="lHH-4W-A7x" secondAttribute="centerY" id="1QI-ax-Bnt"/>
+                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="centerX" secondItem="lHH-4W-A7x" secondAttribute="centerX" id="M8d-GT-pj1"/>
+                                    <constraint firstItem="0Oe-RR-Jt1" firstAttribute="top" secondItem="lHH-4W-A7x" secondAttribute="top" constant="26" id="r9G-Lr-bME"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-eK-fro">
+                                <rect key="frame" x="0.0" y="251.5" width="94" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEA-8Y-Xoa" customClass="WWActivityIndicatorCircleView1" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="42" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eEA-8Y-Xoa" secondAttribute="height" multiplier="1:1" id="K2U-0e-I41"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="top" secondItem="Mab-eK-fro" secondAttribute="top" constant="26" id="8Xo-4q-JcW"/>
+                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="centerX" secondItem="Mab-eK-fro" secondAttribute="centerX" id="W9P-bN-FXJ"/>
+                                    <constraint firstItem="eEA-8Y-Xoa" firstAttribute="centerY" secondItem="Mab-eK-fro" secondAttribute="centerY" id="s4n-Fr-m73"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8g-uu-svM">
+                                <rect key="frame" x="187.5" y="158" width="94" height="93.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3d0-0m-Fcs" customClass="WWActivityIndicatorAnimationLineScalePartyNormalView" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="42" height="41.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3d0-0m-Fcs" secondAttribute="height" multiplier="1:1" id="ZGF-HP-5z5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3d0-0m-Fcs" firstAttribute="centerY" secondItem="P8g-uu-svM" secondAttribute="centerY" id="2XI-ec-pOu"/>
+                                    <constraint firstItem="3d0-0m-Fcs" firstAttribute="top" secondItem="P8g-uu-svM" secondAttribute="top" constant="26" id="HPZ-k7-ggy"/>
+                                    <constraint firstItem="3d0-0m-Fcs" firstAttribute="centerX" secondItem="P8g-uu-svM" secondAttribute="centerX" id="jei-2v-SKv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZN9-dd-ZqX">
+                                <rect key="frame" x="94" y="251.5" width="93.5" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-Gz-gpP" customClass="WWActivityIndicatorCircleView2" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="41.5" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6yc-Gz-gpP" secondAttribute="height" multiplier="1:1" id="rXc-Jc-gW2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6yc-Gz-gpP" firstAttribute="top" secondItem="ZN9-dd-ZqX" secondAttribute="top" constant="26" id="1Xh-WG-Aiz"/>
+                                    <constraint firstItem="6yc-Gz-gpP" firstAttribute="centerX" secondItem="ZN9-dd-ZqX" secondAttribute="centerX" id="4Ea-d8-GyX"/>
+                                    <constraint firstItem="6yc-Gz-gpP" firstAttribute="centerY" secondItem="ZN9-dd-ZqX" secondAttribute="centerY" id="FwS-Og-unv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUK-14-3GX">
+                                <rect key="frame" x="187.5" y="251.5" width="94" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcx-Xq-hyv" customClass="WWActivityIndicatorCircleView3" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="42" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Hcx-Xq-hyv" secondAttribute="height" multiplier="1:1" id="Ax4-g8-MXE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Hcx-Xq-hyv" firstAttribute="centerY" secondItem="KUK-14-3GX" secondAttribute="centerY" id="FB8-af-6rm"/>
+                                    <constraint firstItem="Hcx-Xq-hyv" firstAttribute="centerX" secondItem="KUK-14-3GX" secondAttribute="centerX" id="o2E-lR-Rfw"/>
+                                    <constraint firstItem="Hcx-Xq-hyv" firstAttribute="top" secondItem="KUK-14-3GX" secondAttribute="top" constant="26" id="vRM-zP-zyU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stz-u5-gXi">
+                                <rect key="frame" x="281.5" y="251.5" width="93.5" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgZ-vw-B8j" customClass="WWActivityIndicatorCircleView4" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="41.5" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VgZ-vw-B8j" secondAttribute="height" multiplier="1:1" id="6aG-xT-d6D"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VgZ-vw-B8j" firstAttribute="top" secondItem="stz-u5-gXi" secondAttribute="top" constant="26" id="MsE-ai-gzX"/>
+                                    <constraint firstItem="VgZ-vw-B8j" firstAttribute="centerY" secondItem="stz-u5-gXi" secondAttribute="centerY" id="tp9-jS-MIY"/>
+                                    <constraint firstItem="VgZ-vw-B8j" firstAttribute="centerX" secondItem="stz-u5-gXi" secondAttribute="centerX" id="uYA-1w-UxT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxB-dQ-sBE">
+                                <rect key="frame" x="0.0" y="353" width="94" height="93.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwW-Lf-8Ou" customClass="WWActivityIndicatorCircleView5" customModule="WWAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="26" width="42" height="41.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TwW-Lf-8Ou" secondAttribute="height" multiplier="1:1" id="V4N-8Z-Rxm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TwW-Lf-8Ou" firstAttribute="top" secondItem="hxB-dQ-sBE" secondAttribute="top" constant="26" id="1WP-oa-hK6"/>
+                                    <constraint firstItem="TwW-Lf-8Ou" firstAttribute="centerX" secondItem="hxB-dQ-sBE" secondAttribute="centerX" id="f51-K6-LXo"/>
+                                    <constraint firstItem="TwW-Lf-8Ou" firstAttribute="centerY" secondItem="hxB-dQ-sBE" secondAttribute="centerY" id="oQg-4r-Kch"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ZN9-dd-ZqX" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="0Vf-PL-g0t"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="1kx-W3-Toy"/>
-                            <constraint firstItem="Mab-eK-fro" firstAttribute="leading" secondItem="drB-hD-ek0" secondAttribute="trailing" id="4CM-mx-y5S"/>
+                            <constraint firstItem="lHH-4W-A7x" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="43y-zO-7IL"/>
+                            <constraint firstItem="Mab-eK-fro" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="4DM-vt-mJz"/>
+                            <constraint firstItem="cVt-3n-kOU" firstAttribute="leading" secondItem="drB-hD-ek0" secondAttribute="trailing" id="5J5-wp-QKo"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="6nl-CV-E5R"/>
+                            <constraint firstItem="lHH-4W-A7x" firstAttribute="leading" secondItem="3pU-WF-jzh" secondAttribute="leading" id="71Y-1A-G4O"/>
+                            <constraint firstItem="hxB-dQ-sBE" firstAttribute="top" secondItem="Mab-eK-fro" secondAttribute="bottom" constant="7.5" id="7nP-MJ-c9v"/>
+                            <constraint firstItem="hxB-dQ-sBE" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="83Z-kp-Ygg"/>
+                            <constraint firstItem="P8g-uu-svM" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="8LN-Jg-dX8"/>
+                            <constraint firstItem="lHH-4W-A7x" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="9TR-qI-crp"/>
+                            <constraint firstItem="ZN9-dd-ZqX" firstAttribute="leading" secondItem="Mab-eK-fro" secondAttribute="trailing" id="Abz-M7-bzH"/>
+                            <constraint firstItem="P8g-uu-svM" firstAttribute="leading" secondItem="cVt-3n-kOU" secondAttribute="trailing" id="DVf-35-M5N"/>
+                            <constraint firstItem="P8g-uu-svM" firstAttribute="top" secondItem="mB2-nW-u83" secondAttribute="bottom" id="FHH-Zb-cXz"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="FkI-5F-VX2"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="G2o-kr-Iah"/>
+                            <constraint firstItem="KUK-14-3GX" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="GlP-oM-sr9"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="GpS-Bs-4L7"/>
-                            <constraint firstItem="Mab-eK-fro" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="HcR-rl-0Fd"/>
-                            <constraint firstItem="lHH-4W-A7x" firstAttribute="leading" secondItem="cVt-3n-kOU" secondAttribute="trailing" id="JBD-uY-IZB"/>
-                            <constraint firstItem="Mab-eK-fro" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="KZe-ii-nTa"/>
+                            <constraint firstItem="Mab-eK-fro" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="Hhn-ll-Dnu"/>
+                            <constraint firstItem="hxB-dQ-sBE" firstAttribute="leading" secondItem="X46-Rb-jhY" secondAttribute="leading" id="I0Y-Ks-C0e"/>
+                            <constraint firstItem="stz-u5-gXi" firstAttribute="leading" secondItem="KUK-14-3GX" secondAttribute="trailing" id="Jwm-De-o5D"/>
                             <constraint firstItem="fpF-v3-fod" firstAttribute="leading" secondItem="X46-Rb-jhY" secondAttribute="leading" id="LK3-jf-D4W"/>
-                            <constraint firstItem="cVt-3n-kOU" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="M65-lf-kxG"/>
-                            <constraint firstItem="Mab-eK-fro" firstAttribute="top" secondItem="vsx-TM-1my" secondAttribute="bottom" id="No0-sS-4ca"/>
+                            <constraint firstItem="stz-u5-gXi" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="LcJ-OE-IOm"/>
+                            <constraint firstItem="hxB-dQ-sBE" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="MQD-dS-VkV"/>
+                            <constraint firstItem="KUK-14-3GX" firstAttribute="top" secondItem="lHH-4W-A7x" secondAttribute="bottom" id="Mqe-h8-vCa"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="OJr-v6-mye"/>
                             <constraint firstItem="drB-hD-ek0" firstAttribute="width" secondItem="3pU-WF-jzh" secondAttribute="width" id="OpE-fp-poi"/>
-                            <constraint firstItem="lHH-4W-A7x" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="QtM-jQ-tkP"/>
-                            <constraint firstItem="lHH-4W-A7x" firstAttribute="top" secondItem="3pU-WF-jzh" secondAttribute="bottom" id="UsS-RH-q1a"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="VQv-cr-MR0"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="VYZ-sh-8QQ"/>
-                            <constraint firstItem="cVt-3n-kOU" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="XeY-nI-pPy"/>
+                            <constraint firstItem="lHH-4W-A7x" firstAttribute="top" secondItem="3pU-WF-jzh" secondAttribute="bottom" id="YHZ-Ac-VWx"/>
+                            <constraint firstItem="ZN9-dd-ZqX" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="YHb-E7-2vs"/>
+                            <constraint firstItem="stz-u5-gXi" firstAttribute="top" secondItem="lHH-4W-A7x" secondAttribute="bottom" id="YZx-MD-KS3"/>
+                            <constraint firstItem="cVt-3n-kOU" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="a54-cW-9qf"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="a7G-tx-JEA"/>
                             <constraint firstItem="fpF-v3-fod" firstAttribute="top" secondItem="nIV-AA-wVx" secondAttribute="bottom" id="b1a-U1-nbf"/>
+                            <constraint firstItem="cVt-3n-kOU" firstAttribute="top" secondItem="vsx-TM-1my" secondAttribute="bottom" id="bMk-pO-NYz"/>
                             <constraint firstItem="drB-hD-ek0" firstAttribute="leading" secondItem="X46-Rb-jhY" secondAttribute="leading" id="bOA-JP-NUc"/>
+                            <constraint firstItem="stz-u5-gXi" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="cRI-3a-A2X"/>
+                            <constraint firstItem="KUK-14-3GX" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="cuV-zi-qxF"/>
                             <constraint firstAttribute="trailing" secondItem="3pU-WF-jzh" secondAttribute="trailing" id="gas-c2-Vxo"/>
-                            <constraint firstItem="cVt-3n-kOU" firstAttribute="leading" secondItem="Mab-eK-fro" secondAttribute="trailing" id="gn8-Tg-0qx"/>
+                            <constraint firstItem="P8g-uu-svM" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="gjP-7I-q40"/>
                             <constraint firstItem="mB2-nW-u83" firstAttribute="leading" secondItem="vsx-TM-1my" secondAttribute="trailing" id="gnC-y1-Udr"/>
                             <constraint firstItem="drB-hD-ek0" firstAttribute="height" secondItem="3pU-WF-jzh" secondAttribute="height" id="ipr-Eg-G4a"/>
                             <constraint firstItem="drB-hD-ek0" firstAttribute="top" secondItem="fpF-v3-fod" secondAttribute="bottom" id="kkn-bx-OBl"/>
+                            <constraint firstItem="KUK-14-3GX" firstAttribute="leading" secondItem="ZN9-dd-ZqX" secondAttribute="trailing" id="lcf-by-zgO"/>
+                            <constraint firstItem="Mab-eK-fro" firstAttribute="top" secondItem="drB-hD-ek0" secondAttribute="bottom" id="nLR-dN-leC"/>
                             <constraint firstItem="vsx-TM-1my" firstAttribute="leading" secondItem="fpF-v3-fod" secondAttribute="trailing" id="oSF-sK-OG9"/>
-                            <constraint firstItem="lHH-4W-A7x" firstAttribute="height" secondItem="fpF-v3-fod" secondAttribute="height" id="p3w-Qa-OqN"/>
-                            <constraint firstItem="cVt-3n-kOU" firstAttribute="top" secondItem="mB2-nW-u83" secondAttribute="bottom" id="taO-Ul-bBT"/>
+                            <constraint firstItem="ZN9-dd-ZqX" firstAttribute="top" secondItem="cVt-3n-kOU" secondAttribute="bottom" id="qd3-SZ-NmC"/>
+                            <constraint firstItem="Mab-eK-fro" firstAttribute="leading" secondItem="X46-Rb-jhY" secondAttribute="leading" id="uYa-gx-TEL"/>
+                            <constraint firstItem="cVt-3n-kOU" firstAttribute="width" secondItem="fpF-v3-fod" secondAttribute="width" id="wQU-f2-kDe"/>
                             <constraint firstItem="3pU-WF-jzh" firstAttribute="leading" secondItem="mB2-nW-u83" secondAttribute="trailing" id="z7L-YC-dAo"/>
                         </constraints>
                     </view>
@@ -427,7 +559,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-Y9-HBD">
-                                <rect key="frame" x="137.5" y="283" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="PLJ-x8-22f"/>
@@ -435,7 +567,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Up4-45-FA1">
-                                <rect key="frame" x="137.5" y="393" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="393.5" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="9qd-TY-DpP"/>
@@ -443,7 +575,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTd-yt-Mmb" customClass="RadarView" customModule="WWAnimation" customModuleProvider="target">
-                                <rect key="frame" x="137" y="503" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="503.5" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="DxA-Hj-m7a"/>
@@ -451,7 +583,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bu-2g-bma" customClass="LoadingView" customModule="WWAnimation" customModuleProvider="target">
-                                <rect key="frame" x="237" y="503" width="100" height="100"/>
+                                <rect key="frame" x="237.5" y="503.5" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="X8Y-aw-921"/>
@@ -479,6 +611,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1327" y="580"/>
+        </scene>
+        <!--Pay Success Controller-->
+        <scene sceneID="JjV-XI-qcw">
+            <objects>
+                <viewController id="vey-CG-nYM" customClass="WWPaySuccessController" customModule="WWAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O7u-wO-cLL"/>
+                        <viewControllerLayoutGuide type="bottom" id="YZP-yM-Ebu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ks-ac-wgS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phz-kc-LfU">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Y17-MD-QPc"/>
+                                    <constraint firstAttribute="height" constant="100" id="eaj-jJ-QI0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Phz-kc-LfU" firstAttribute="centerY" secondItem="1Ks-ac-wgS" secondAttribute="centerY" id="mBC-0J-xzy"/>
+                            <constraint firstItem="Phz-kc-LfU" firstAttribute="centerX" secondItem="1Ks-ac-wgS" secondAttribute="centerX" id="zMG-MY-5Hn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QA2-TF-K5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="84"/>
         </scene>
     </scenes>
 </document>

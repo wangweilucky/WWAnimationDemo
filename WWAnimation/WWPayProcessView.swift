@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WWRotateProgressAnimationView: UIView {
+class WWPayProcessView: UIView {
 
     let beginTime: Double = 0.5
     let strokeStartDuration: Double = 1.2
@@ -16,6 +16,7 @@ class WWRotateProgressAnimationView: UIView {
     
     let strokeColor = UIColor.black.cgColor
     let strokeThickness: CGFloat = 2.0
+    
     var radius: CGFloat {
         return self.bounds.width * 0.5
     }
@@ -34,7 +35,20 @@ class WWRotateProgressAnimationView: UIView {
         self.initMyView()
     }
     
+    
+    
     func initMyView() {
+        
+       
+    }
+
+
+}
+
+
+extension WWPayProcessView {
+    
+    func showProcess() {
         
         let arcCenter = CGPoint(x: radius + strokeThickness * 0.5 + 5,
                                 y: radius + strokeThickness * 0.5 + 5)
@@ -88,6 +102,12 @@ class WWRotateProgressAnimationView: UIView {
         progressAnimatedLayer.add(groupAnimation, forKey: "groupAnimations")
         
     }
-
-
+    
+    func showSucess() {
+        
+    }
+    
+    func showFailure() {
+        
+    }
 }
